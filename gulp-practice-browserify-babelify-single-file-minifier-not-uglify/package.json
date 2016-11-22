@@ -14,11 +14,14 @@
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.2",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-load-plugins": "^1.4.0",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.9.1",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "path": "^0.12.7",
+    "uglify-js": "^2.7.4"
   },
   "dependencies": {
     "jquery": "^3.1.1"

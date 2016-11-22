@@ -1,0 +1,1 @@
+console.log('this is a test for npm script'); // see "scripts" in package.json

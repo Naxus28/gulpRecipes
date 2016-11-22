@@ -7,6 +7,8 @@ var buffer = require('vinyl-buffer');
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 var size = require('gulp-size');
+var uglifyjs = require('uglify-js');
+var minifier = require('gulp-uglify/minifier');
 
 // server config
 gulp.task('browserSync', function() {
@@ -27,6 +29,11 @@ var plugins = require('gulp-load-plugins')();
 // the best way to use browserify is to import all js into a 'main.js' and use that file as the source for browserify
 // use this if for any reason we cannot import all files to a 'main.js' and browserify that file only
 gulp.task('scripts', function() {
+  var uglifyOptions = {
+    outSourceMap: "script.min.jsmap",
+    sourceRoot: "dist/js"
+  };
+
   browserify({entries: 'src/js/main.js', debug: true}) // if we need to add more files we can pass something like ['src/main.js', 'src/first.js', 'src/second.js'] into 'browserify'
   // alternatively to the transform below we can add the following config in package.json
   // "browserify": {"transform": [["babelify", { "presets": ["es2015"] }]]}
@@ -37,8 +44,8 @@ gulp.task('scripts', function() {
   .pipe(source('script.min.js')) // in memory bundled file
   .pipe(buffer()) // need to buffer to be able to use other js plugins
   .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(plugins.uglify())
-    .pipe(size())
+  .pipe(minifier(uglifyOptions, uglifyjs))
+  .pipe(size())
   .pipe(sourcemaps.write('./'))
   .pipe(gulp.dest('dist/js'))
   .pipe(browserSync.reload({ stream: true }))
