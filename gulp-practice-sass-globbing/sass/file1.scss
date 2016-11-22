@@ -1,0 +1,9 @@
+$font-stack:    Open-sans, sans-serif;
+$primary-color: #333;
+$secondary-color: #444;
+
+body.one {
+  font: 80% $font-stack;
+  color: $primary-color;
+  background: $secondary-color;
+}

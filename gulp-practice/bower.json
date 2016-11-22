@@ -1,0 +1,21 @@
+{
+  "name": "gulp-practice",
+  "description": "A project developed to practice gulp",
+  "main": "index.js",
+  "authors": [
+    "Gabriel Ferraz"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}

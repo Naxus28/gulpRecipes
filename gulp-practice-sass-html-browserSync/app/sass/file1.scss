@@ -1,0 +1,17 @@
+$font-stack: Open-sans, sans-serif;
+$primary-color: #333;
+$secondary-color: magenta;
+$div-height: 100px;
+
+div {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 2px 3px 2px 1px rgba(0,0,0,0.4);
+  box-shadow: 2px 3px 2px 1px rgba(0,0,0,0.4);
+}
+
+div.one {
+  height: $div-height;
+  font: 80% $font-stack;
+  color: $primary-color;
+  background: $secondary-color;
+}

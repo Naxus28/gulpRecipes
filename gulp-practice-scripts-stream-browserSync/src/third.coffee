@@ -1,0 +1,1 @@
+thirdFunction = () -> "third"

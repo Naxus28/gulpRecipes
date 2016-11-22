@@ -1,0 +1,9 @@
+$font-stack:    Times, serif;
+$primary-color: #555;
+$secondary-color: #dedede;
+
+body.three {
+  font: 70% $font-stack;
+  color: $primary-color;
+  background: $secondary-color;
+}

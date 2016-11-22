@@ -1,0 +1,11 @@
+$font-stack:    Times, serif;
+$primary-color: #bbb;
+$secondary-color: brown;
+$div-height: 100px;
+
+div.four {
+  height: $div-height;
+  font: 60% $font-stack;
+  color: $primary-color;
+  background: $secondary-color;
+}
