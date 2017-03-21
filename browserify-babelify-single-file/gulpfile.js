@@ -6,6 +6,7 @@ var browserify = require('browserify');
 var buffer = require('vinyl-buffer');
 var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
+var source = require('vinyl-source-stream');
 var size = require('gulp-size');
 
 // server config

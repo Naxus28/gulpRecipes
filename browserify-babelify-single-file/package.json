@@ -15,10 +15,13 @@
     "browser-sync": "^2.18.2",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-inject": "^4.1.0",
     "gulp-load-plugins": "^1.4.0",
+    "gulp-rev": "^7.1.2",
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.9.1",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "wiredep": "^4.0.0"
   },
   "dependencies": {
     "jquery": "^3.1.1"
